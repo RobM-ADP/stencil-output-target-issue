@@ -21,8 +21,9 @@ export const config: Config = {
     {
       type: 'docs-custom',
       generator: (docs: JsonDocs) => {
+        console.log(JSON.stringify(docs, null, 4));
         docs.components.forEach(component => {
-            console.log(component.tag, component.slots.length);
+          console.log(component.tag, component.slots.length);
         });
       }
     }

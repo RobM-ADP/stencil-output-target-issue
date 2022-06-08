@@ -1,6 +1,10 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
+/**
+ * @slot test - Should be used on an icon in a button that has no text.
+ * @slot - Should be used on an icon in a button that has no text.
+ */
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
